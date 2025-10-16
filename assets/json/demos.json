@@ -1,0 +1,14 @@
+[
+    { "name": "Home", "image": "/images/demo/home.jpg", "path": "/home" },
+    { "name": "Features", "image": "/images/demo/features.jpg", "path": "/features" },
+    { "name": "Demo", "image": "/images/demo/demo.jpg", "path": "/demo" },
+    { "name": "Pricing", "image": "/images/demo/pricing.jpg", "path": "/Pricing" },
+    { "name": "installation", "image": "/images/demo/installation.jpg", "path": "/installation" },
+    { "name": "Customization", "image": "/images/demo/customization.jpg", "path": "/customization" },
+    { "name": "Maintanence", "image": "/images/demo/maintanence.jpg", "path": "/maintanence" },
+    { "name": "Documentation", "image": "/images/demo/documentation.jpg", "path": "/documentation" },
+    { "name": "Blogs", "image": "/images/demo/blogs.jpg", "path": "/blogs" },
+    { "name": "Blog Details", "image": "/images/demo/blog-details.jpg", "path": "/blogs/1" },
+    { "name": "Faq", "image": "/images/demo/faq.jpg", "path": "/faq" },
+    { "name": "testimonial", "image": "/images/demo/testimonial.jpg", "path": "/testimonial" }
+]
