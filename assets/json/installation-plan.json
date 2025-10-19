@@ -50,7 +50,7 @@
         "name":"Professional",
         "popular":true,
         "icon":"icon-fill-crown",
-        "subtitle":"Take your business to the professional level.",
+        "subtitle":"Take your business to the pro level.",
         "price":499,
         "old_price":599,
         "features":[
@@ -65,29 +65,6 @@
             {"name":"One revision before project handover.", "enable": true},
             {"name":"Upload User and delivery man apps to google play store.", "enable": true},
             {"name":"Upload User and delivery man apps to the Apple store.", "enable": false},
-            {"name":"Upload Marchant, Kitchen and Kiosk apps to the google play store.", "enable": false},
-            {"name":"Upload Marchant, Kitchen and Kiosk apps to the Apple store.", "enable": false}
-        ]
-    },
-    {
-        "id":4,
-        "icon":"icon-fill-diamond",
-        "name":"Pro Plus",
-        "subtitle":"Enhanced with a meticulous expert approach.",
-        "price":699,
-        "old_price":799,
-        "features":[
-            {"name":"Setup Admin and Branch panel on your hosting.", "enable": true},
-            {"name":"Configure User app, and delivery man app with your admin panel.", "enable": true},
-            {"name":"Customize App name, logo, Package Name, Splash Screen, etc.", "enable": true},
-            {"name":"Setup SMTP Mail configuration.", "enable": true},
-            {"name":"Setup OTP configuration.", "enable": true},
-            {"name":"Setup Payment & SMS gateways.", "enable": true},
-            {"name":"Setup third party API.", "enable": true},
-            {"name":"Configure Push notification.", "enable": true},
-            {"name":"One revision before project handover.", "enable": true},
-            {"name":"Upload User and delivery man apps to google play store.", "enable": true},
-            {"name":"Upload User and delivery man apps to the Apple store.", "enable": true},
             {"name":"Upload Marchant, Kitchen and Kiosk apps to the google play store.", "enable": false},
             {"name":"Upload Marchant, Kitchen and Kiosk apps to the Apple store.", "enable": false}
         ]

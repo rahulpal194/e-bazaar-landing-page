@@ -148,7 +148,7 @@
                     <NuxtLink to="/#" class="text-primary font-bold">Hire us</NuxtLink>
                 </nav>
                 <div class="hidden lg:flex items-center gap-7">
-                    <NuxtLink to="#" class="gradient-button h-12 inline-flex items-center">Sign In</NuxtLink>
+                    <NuxtLink to="#" class="primary-button !h-12 inline-flex items-center">Sign In</NuxtLink>
                 </div>
                 <button @click="isOpen=!isOpen" class="lg:hidden block rounded-2xl">
                     <i class="icon-hamburger-menu gradient-text text-2xl"></i>
@@ -306,7 +306,7 @@
                             <input id="name" name="name" type="text" placeholder="Enter your name" class="px-6 w-full rounded-full shadow-input h-[52px] outline-none mb-4 bg-white" required/>
                             <label for="email" class="sr-only">Email</label>
                             <input id="email" name="email" type="email" placeholder="Enter your email" class="px-6 w-full rounded-full shadow-input h-[52px] outline-none mb-4 bg-white" required/>
-                            <button type="submit" class="float-start md:float-end cursor-pointer py-2.5 sm:py-3.5 px-6 rounded-full text-white text-base sm:text-lg leading-6 font-bold gradient-button">Subscribe</button>
+                            <button type="submit" class="primary-button inline-block float-right">Subscribe</button>
                         </form>
                     </div>
                 </div>
@@ -398,7 +398,7 @@
             </div>
         </div>
         <div class="my-6.5 border-t border-[#FFEAF2] relative">
-            <NuxtLink to="#" class="w-13 h-13 rounded-full gradient-button flex items-center justify-center absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2" aria-label="Back to Top">
+            <NuxtLink to="#" class="!w-13 !h-13 !p-0 rounded-full primary-button flex items-center justify-center absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2" aria-label="Back to Top">
                 <i class="icon-chevron-up text-3xl text-white"></i>
             </NuxtLink>
         </div>
