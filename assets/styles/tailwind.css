@@ -1,10 +1,12 @@
 @import "tailwindcss";
 
 @theme{
+    
     --font-plus : Plus Jakarta Sans , sans-serif;
     --color-primary: #1A7E57;
     --color-secondary: #9DC41D;
     --shadow-gradientBtn: 0 8px 32px 0 rgba(99, 197, 51, 0.36);
+    --shadow-btn: 0 8px 32px 0 rgba(106, 156, 135, 0.25);
     --shadow-header: 0px 4px 32px 0px rgba(156, 174, 186, 0.18);
     --shadow-card: 0 16px 40px 0 rgba(1, 0, 54, 0.09);
     --shadow-badge: 0 8px 32px rgba(99, 197, 51, 0.36);
@@ -35,59 +37,80 @@
 }
 
 @layer base{
-     html{@apply scroll-smooth sm:overflow-x-auto overflow-x-hidden}
-     body{@apply font-plus text-[#323D4E] !scroll-smooth sm:overflow-x-visible overflow-x-hidden}
-     button{@apply cursor-pointer}
-    .sticky-header { @apply backdrop-blur-[100px] shadow-header bg-white/90 }
-    .card {@apply bg-[#F6F9FC] rounded-2xl p-6 hover:shadow-card hover:bg-white transition-all duration-300 relative h-full}
-    .blur-rect {@apply absolute -z-10 top-32 left-1/2 -translate-x-1/2 w-[580px] h-[75px] rotate-[35deg] blur-[300px] bg-[#95FFD6]}
-    .heading {@apply text-3xl lg:text-[42px] font-bold text-center leading-tight}
-    .title {@apply text-sm sm:text-base font-medium text-primary px-4 py-2.5 leading-tight rounded-full w-fit mx-auto border border-[#E0E6F8]}
-    
-    .whatsapp-gradient{@apply bg-linear-270 from-[#2AE971] to-[#00B142] shadow-whatsapp hover:from-[#00B142] hover:to-[#2AE971] transition-all duration-300 cursor-pointer}
-    .gradient-text { @apply bg-linear-to-l text-transparent bg-clip-text from-secondary to-primary}
-    .hover-button { @apply !px-6 w-fit group-hover:border-none group-hover:bg-gradient-to-l group-hover:from-secondary group-hover:to-primary group-hover:text-white group-hover:shadow-gradientBtn}
-    .primary-button { @apply h-13 px-6 sm:px-8 bg-gradient-to-l from-secondary to-primary rounded-full text-white text-base whitespace-nowrap font-bold shadow-gradientBtn active:shadow-none transition-all duration-300 hover:from-primary hover:to-secondary}
-    .button { @apply h-13 px-6 sm:px-8 hover:bg-gradient-to-l hover:from-secondary hover:to-primary border hover:border-none border-secondary rounded-full text-secondary whitespace-nowrap hover:text-white text-base font-bold hover:shadow-gradientBtn transition-all duration-300}
+     html {@apply scroll-smooth sm:overflow-x-auto overflow-x-hidden}
+     body {@apply font-plus text-[#323D4E] !scroll-smooth sm:overflow-x-visible overflow-x-hidden}
+     button {@apply cursor-pointer}
+    .blur-rect {@apply absolute -z-10 top-0 left-1/2 -translate-x-1/2 w-[580px] h-[75px] rotate-[35deg] blur-[300px] bg-[#95FFD6]}
+    .button {@apply h-13 px-6 sm:px-8 shadow-btn hover:bg-gradient-to-l hover:from-secondary hover:to-primary border hover:border-current border-secondary rounded-full text-secondary whitespace-nowrap hover:text-white text-base font-bold hover:shadow-gradientBtn transition-all duration-300}
+    .blogNavigation {@apply flex flex-col lg:flex-row items-start lg:items-center origin-top transition-all duration-300 max-lg:absolute max-lg:top-12 max-lg:left-0 max-lg:z-10 max-lg:p-2 max-lg:w-full max-lg:shadow-paper max-lg:rounded-xl max-lg:bg-white}
+    .blogNavigation button.active {@apply bg-primary text-white shadow-gradientBtn !font-bold}
 
-    .modal { @apply bg-black/60 backdrop-blur-sm w-full h-screen inset-0 fixed flex justify-center items-center z-30 opacity-0 invisible transition-all duration-300}
-    .modal.active {@apply opacity-100 visible}
-    .modal-content{@apply relative bg-white max-w-[560px] w-full p-6 rounded-2xl aspect-video scale-y-0 -translate-y-full transition-all duration-500}
-    .modal.active .modal-content { @apply scale-y-100 translate-y-0}
+    .card {@apply bg-[#F6F9FC] rounded-2xl p-6 hover:shadow-card hover:bg-white transition-all duration-300 relative h-full}
+    .check-icon {@apply  text-2xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent}
+
+    .custom-switcher input {@apply relative flex-shrink-0 w-[60px] h-8 cursor-pointer before:inline-block before:absolute before:inset-0 before:w-full before:h-full before:rounded-3xl before:bg-primary before:transition-all before:duration-300 after:absolute after:top-1/2 after:left-[72%] after:-translate-y-1/2 after:-translate-x-1/2 after:w-7 after:h-7 after:rounded-full after:bg-gradient-to-b after:from-white after:to-white/70 after:transition-all after:duration-300}
+    .custom-switcher input:checked {@apply after:left-[28%]}
+
+    .content.active {@apply text-primary}
+
+    #card-1 { @apply basis-[450px] grow xl:grow-0} 
+    #card-2 { @apply basis-[652px] grow xl:grow-0}   
+    #card-3 { @apply basis-[601px] grow xl:grow-0}  
+    #card-4 { @apply basis-[501px] grow xl:grow-0} 
+
+    #choice-1 { @apply basis-[320px] grow xl:grow-0}
+    #choice-2 {@apply basis-[413px] grow xl:grow-0}
+    #choice-3 {@apply basis-[345px] grow xl:grow-0}
+    #choice-4 {@apply basis-[406px] grow xl:grow-0}
+    #choice-5 {@apply basis-[349px] grow xl:grow-0}
+    #choice-6 {@apply basis-[323px] grow xl:grow-0}
 
     .drawer{@apply fixed top-0 left-1/2 max-w-[95%] h-auto max-h-[calc(100%-150px)] w-full mx-auto bg-white px-4 py-6 
             transform -translate-y-full -translate-x-1/2 transition-all duration-300 z-50 shadow-sidebar rounded-2xl}
     .drawer.active {@apply top-16 transform -translate-y-0}
-
     .dropdown-group .dropdown-btn i {@apply rotate-0 transition-all duration-300}
     .dropdown-group.active .dropdown-btn i {@apply rotate-180 transition-all duration-300}
     .dropdown-group .dropdown-content {@apply hidden}
     .dropdown-group.active .dropdown-content {@apply flex}
 
-    .vertical-dropdown-group .vertical-dropdown-content {@apply hidden}
-    .vertical-dropdown-group.active .vertical-dropdown-content { @apply flex}
+    #demo-card-1 { @apply basis-[298px] grow xl:grow-0} 
+    #demo-card-2 { @apply basis-[390px] grow xl:grow-0}   
+    #demo-card-3 { @apply basis-[390px] grow xl:grow-0} 
+
+    .gradient-text { @apply bg-linear-to-l text-transparent bg-clip-text from-secondary to-primary}
+    .heading {@apply text-3xl lg:text-[42px] font-bold text-center leading-tight}
+    .hover-button { @apply !px-6 w-fit group-hover:border-none group-hover:bg-gradient-to-l group-hover:from-secondary group-hover:to-primary group-hover:text-white group-hover:shadow-gradientBtn}
+    
+    .installation-plan {@apply p-4 rounded-3xl border border-[#E7EAEF] hover:border-secondary bg-white hover:bg-linear-180 hover:from-[#F0FFF9] hover:to-[#FFF]}
+    .installation-plan.active {@apply !border-secondary bg-linear-180 from-[#F0FFF9] to-[#FFF]}
+    .installation-plan.active > button {@apply !text-white !border-none !shadow-gradientBtn !bg-clip-padding !bg-gradient-to-l from-secondary to-primary cursor-pointer}
+    input::placeholder{@apply text-base font-normal text-[#7F8B9D]}
+    
+    .modal {@apply bg-black/60 backdrop-blur-sm w-full h-screen inset-0 fixed flex justify-center items-center z-30 opacity-0 invisible transition-all duration-300}
+    .modal.active {@apply opacity-100 visible}
+    .modal-content{@apply relative bg-white max-w-[560px] w-full p-6 rounded-2xl aspect-video scale-y-0 -translate-y-full transition-all duration-500}
+    .modal.active .modal-content {@apply scale-y-100 translate-y-0}
+    
+    .navbtn {@apply w-fit text-base lg:text-lg font-semibold leading-5 lg:leading-6 rounded-full px-4 py-3 flex items-center whitespace-nowrap flex-shrink-0 gap-2}
+    .navbtn.active{@apply !bg-primary !text-white}
+    .navbtn:hover{@apply bg-linear-90 from-[#C8F9E5] to-white !text-black transition-all duration-300}
 
     .pricePlan {@apply border border-[#E7EAEF] hover:border-secondary bg-white hover:bg-linear-180 hover:from-[#FFF6F5] hover:to-[#FFF]}
     .pricePlan.active {@apply !border-secondary bg-linear-180 from-[#FFF6F5] to-[#FFF]}
     .pricePlan.active > button {@apply !text-white !border-none !shadow-gradientBtn !bg-clip-padding !bg-gradient-to-b from-secondary to-primary cursor-pointer}
+    .primary-button { @apply h-13 px-6 sm:px-8 bg-gradient-to-l from-secondary to-primary rounded-full text-white text-base whitespace-nowrap font-bold shadow-gradientBtn active:shadow-none transition-all duration-300 hover:from-primary hover:to-secondary}
+    
+    .sticky-header { @apply backdrop-blur-[100px] shadow-header bg-white/90 }
 
-    .navbtn.active{@apply !bg-primary !text-white}
-    .navbtn:hover{@apply bg-linear-90 from-[#FFD9D5] to-white !text-black transition-all duration-300}
+    .title {@apply text-sm sm:text-base font-medium text-primary px-4 py-2.5 leading-tight rounded-full w-fit mx-auto border border-[#E0E6F8]}
+    .thin-scrolling { @apply overflow-y-auto transition-all duration-500 }
+    .thin-scrolling:hover::-webkit-scrollbar-thumb { @apply bg-primary }
+    .thin-scrolling::-webkit-scrollbar { @apply w-[3px] }
+    .thin-scrolling::-webkit-scrollbar { @apply rounded-2xl bg-transparent }
+    .tabBtn.active{@apply bg-[#FFF2F0]}
 
-    .installation-plan {@apply p-4 rounded-3xl border border-[#E7EAEF] hover:border-secondary bg-white hover:bg-linear-180 hover:from-[#F0FFF9] hover:to-[#FFF]}
-    .installation-plan.active {@apply !border-secondary bg-linear-180 from-[#F0FFF9] to-[#FFF]}
-    .installation-plan.active > button {@apply !text-white !border-none !shadow-gradientBtn !bg-clip-padding !bg-gradient-to-l from-secondary to-primary cursor-pointer}
-
-    #card-1 { @apply basis-[450px] grow xl:grow-0} 
-    #card-2 { @apply basis-[652px] grow xl:grow-0}   
-    #card-3 { @apply basis-[601px] grow xl:grow-0}  
-    #card-4 { @apply basis-[501px] grow xl:grow-0}   
-
-    #demo-card-1 { @apply basis-[298px] grow xl:grow-0} 
-    #demo-card-2 { @apply basis-[390px] grow xl:grow-0}   
-    #demo-card-3 { @apply basis-[390px] grow xl:grow-0}  
-
-
+    .vertical-dropdown-group .vertical-dropdown-content {@apply hidden}
+    .vertical-dropdown-group.active .vertical-dropdown-content { @apply flex}
     .vector-bg-1{@apply bg-linear-180 from-[#C1B9FF] to-[#6A57FF] shadow-[0px_8px_8px_rgba(117,99,255,0.25)]}
     .vector-bg-2{@apply bg-linear-180 from-[#FFB1D2] to-[#EE2277] shadow-[0px_8px_8px_rgba(215,34,142,0.25)]}
     .vector-bg-3{@apply bg-linear-180 from-[#FFC4AD] to-[#F86226] shadow-[0px_8px_8px_rgba(248,98,38,0.25)]}
@@ -97,30 +120,12 @@
     .vector-bg-7{@apply bg-linear-180 from-[#A1ABF2] to-[#3F55E8] shadow-[0px_8px_8px_rgba(63,85,232,0.25)]}
     .vector-bg-8{@apply bg-linear-180 from-[#FFC79D] to-[#F4781D] shadow-[0px_8px_8px_rgba(244,120,29,0.25)]}
     .vector-bg-9{@apply bg-linear-180 from-[#F3A4D3] to-[#D7228E] shadow-[0px_8px_8px_rgba(215,34,142,0.25)]}
-
-    #choice-1 { @apply basis-[320px] grow xl:grow-0}
-    #choice-2 {@apply basis-[413px] grow xl:grow-0}
-    #choice-3 {@apply basis-[345px] grow xl:grow-0}
-    #choice-4 {@apply basis-[406px] grow xl:grow-0}
-    #choice-5 {@apply basis-[349px] grow xl:grow-0}
-    #choice-6 {@apply basis-[323px] grow xl:grow-0}
-
-    input::placeholder{@apply text-base font-normal text-[#7F8B9D]}
-
-    .thin-scrolling { @apply overflow-y-auto transition-all duration-500 }
-    .thin-scrolling:hover::-webkit-scrollbar-thumb { @apply bg-primary }
-    .thin-scrolling::-webkit-scrollbar { @apply w-[3px] }
-    .thin-scrolling::-webkit-scrollbar { @apply rounded-2xl bg-transparent }
-
-    .check-icon {@apply  text-2xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent}
-
-    .custom-switcher input {@apply relative flex-shrink-0 w-[60px] h-8 cursor-pointer before:inline-block before:absolute before:inset-0 before:w-full before:h-full before:rounded-3xl before:bg-primary before:transition-all before:duration-300 after:absolute after:top-1/2 after:left-[72%] after:-translate-y-1/2 after:-translate-x-1/2 after:w-7 after:h-7 after:rounded-full after:bg-gradient-to-b after:from-white after:to-white/70 after:transition-all after:duration-300}
-    .custom-switcher input:checked {@apply after:left-[28%]}
-
     .vertical-dropdown-group .vertical-dropdown-content {@apply hidden}
     .vertical-dropdown-group.active .vertical-dropdown-content { @apply flex}
-    .tabBtn.active{@apply bg-[#FFF2F0]}
-    .content.active {@apply text-primary}
+
+    .whatsapp-button {@apply h-13 px-6 sm:px-8 bg-gradient-to-l rounded-full text-white text-base whitespace-nowrap font-bold active:shadow-none bg-linear-270 from-[#2AE971] to-[#00B142] shadow-whatsapp transition-all duration-300 cursor-pointer}
+   
+    
 }
 @layer utilities{
     .container{@apply max-w-[1158px] w-full mx-auto px-4}

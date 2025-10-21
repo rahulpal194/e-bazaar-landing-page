@@ -34,7 +34,7 @@
                                     Customization
                                 </span>
                             </NuxtLink>
-                            <NuxtLink to="/maintanence" class="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                            <NuxtLink to="/maintanance" class="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
                                 <span class="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-green bg-gradient-to-l from-[#52EA7C] to-[#1CB803]">
                                     <i class="icon-music-play text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
                                 </span>
@@ -62,7 +62,7 @@
                                     Documentation
                                 </span>
                             </NuxtLink>
-                            <NuxtLink to="/blogs" class="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                            <NuxtLink to="/blog" class="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
                                 <span class="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-orange bg-gradient-to-l from-[#B077FF] to-[#7918FF]">
                                     <i class="icon-document-text text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
                                 </span>
@@ -345,7 +345,7 @@
                             </NuxtLink>
                         </div>
                     </div>
-                    <button class="cursor-pointer py-2.5 sm:py-3.5 px-6 sm:px-9 rounded-full text-white text-base sm:text-lg leading-6 font-bold gradient-button">Get Support</button>
+                    <button class="primary-button">Get Support</button>
                 </div>
                 <div class="col-span-12 lg:col-span-8">
                     <div class="grid grid-cols-12 gap-y-12 sm:gap-x-10">
