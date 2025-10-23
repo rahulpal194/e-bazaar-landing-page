@@ -92,7 +92,7 @@
             </div> 
             <div v-if="autoplaytab.featureActive.value == 1" class="mb-12 md:mb-16">
                 <div class="grid lg:grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-8 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
+                    <div class="col-span-12 lg:col-span-8 feature-card pt-8">
                         <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
                             <div class="sm:py-8 ps-8 flex-shrink">
                                 <h3 class="text-2xl md:text-3xl font-bold mb-4">Admin Dashboard</h3>
@@ -101,7 +101,7 @@
                             <NuxtImg class="max-w-[414px] w-full h-[286px]" src="/images/features/admin-panel/admin-panel-1.png" alt="admin"/>
                         </div>
                     </div>
-                    <div class="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                    <div class="col-span-12 lg:col-span-4 feature-card px-6 pt-6">
                         <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
                             <div>
                                 <h3 class="text-2xl font-bold mb-4">Built-in POS</h3>
@@ -112,7 +112,7 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                    <div class="col-span-12 lg:col-span-4 feature-card px-6 pt-6">
                         <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4 ">
                             <div>
                                 <h3 class="text-2xl font-bold mb-4">QR Code Menu Maker</h3>
@@ -121,7 +121,7 @@
                             <NuxtImg class="max-w-[324px] h-[166px] w-full" src="/images/features/admin-panel/admin-panel-3.png" alt="qr_code"/>
                         </div>
                     </div>
-                    <div class="col-span-12 lg:col-span-8 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
+                    <div class="col-span-12 lg:col-span-8 feature-card pt-8">
                         <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
                             <div class="sm:py-8 ps-8 flex-shrink">
                                 <h3 class="text-2xl md:text-3xl font-bold mb-4">Add Items with Variations & Addon</h3>
@@ -134,7 +134,7 @@
             </div>
             <div v-if="autoplaytab.featureActive.value == 2" class="mb-12 md:mb-16">
                 <div class="grid lg:grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-6 bg-[#FCF6F8] pt-8 px-8 rounded-2xl border border-[#FFDCE8]">
+                    <div class="col-span-12 lg:col-span-6 feature-card pt-8 px-8">
                         <div class="flex flex-col items-center gap-4 sm:gap-6 overflow-hidden">
                             <div>
                                 <h3 class="text-2xl md:text-3xl font-bold mb-4">Branch Manager Dashboard</h3>
@@ -143,7 +143,7 @@
                             <NuxtImg class="h-[286px] w-full" src="/images/features/branch-staff/branch-staff-1.png" alt="admin"/>
                         </div>
                     </div>
-                    <div class="col-span-12 lg:col-span-6 bg-[#FCF6F8] px-8 pt-8 rounded-2xl border border-[#FFDCE8]">
+                    <div class="col-span-12 lg:col-span-6 feature-card px-8 pt-8">
                         <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
                             <div>
                                 <h3 class="text-2xl md:text-3xl font-bold mb-4">Chef/Kitchen Dashboard</h3>
@@ -154,7 +154,7 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-8 bg-[#FCF6F8] pt-8 px-8 rounded-2xl border border-[#FFDCE8]">
+                    <div class="col-span-12 lg:col-span-8 bg-[#FCF6F8] pt-8 px-8">
                         <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 overflow-hidden">
                             <div>
                                 <h3 class="text-2xl md:text-3xl font-bold mb-4">POS Operator Dashboard</h3>
@@ -163,7 +163,7 @@
                             <NuxtImg class="max-w-[388px] w-full h-[286px] flex-grow flex-shrink-0" src="/images/features/branch-staff/branch-staff-3.png" alt="addon"/>
                         </div>
                     </div>
-                    <div class="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                    <div class="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6">
                         <div class="flex flex-col justify-between items-center gap-4 sm:gap-6">
                             <div>
                                 <h3 class="text-2xl font-bold mb-4">Point of Sale (POS)</h3>
@@ -176,7 +176,7 @@
             </div>
             <div v-if="autoplaytab.featureActive.value == 3" class="mb-12 md:mb-16">
                 <div class="grid lg:grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-8 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
+                    <div class="col-span-12 lg:col-span-8 feature-card pt-8">
                         <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
                             <div class="sm:py-8 ps-8 flex-shrink">
                                 <h3 class="text-2xl md:text-3xl font-bold mb-4">Responsive User Website</h3>
@@ -185,7 +185,7 @@
                             <NuxtImg class="w-[414px] h-[286px] flex-grow flex-shrink-0" src="/images/features/user-site/user-site-1.png" alt="admin"/>
                         </div>
                     </div>
-                    <div class="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                    <div class="col-span-12 lg:col-span-4 feature-card px-6 pt-6">
                         <div class="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
                             <div>
                                 <h3 class="text-2xl font-bold mb-4">Web Banners</h3>
@@ -196,7 +196,7 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-12 gap-6 mb-6">
-                    <div class="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                    <div class="col-span-12 lg:col-span-4 feature-card px-6 pt-6">
                         <div class="flex flex-col justify-between items-center gap-4">
                             <div>
                                 <h3 class="text-2xl font-bold mb-4">Cookie Banner</h3>
@@ -205,7 +205,7 @@
                             <NuxtImg class="max-w-[388px] h-[168px] w-full" src="/images/features/user-site/user-site-3.png" alt="qr_code"/>
                         </div>
                     </div>
-                    <div class="col-span-12 lg:col-span-8 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
+                    <div class="col-span-12 lg:col-span-8 feature-card pt-8">
                         <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
                             <div class="sm:py-8 ps-8 flex-shrink">
                                 <h3 class="text-2xl md:text-3xl font-bold mb-4">Featured & Most Popular Items</h3>

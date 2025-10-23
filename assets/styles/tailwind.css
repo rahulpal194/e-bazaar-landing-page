@@ -76,6 +76,7 @@
     #demo-card-1 { @apply basis-[298px] grow xl:grow-0} 
     #demo-card-2 { @apply basis-[390px] grow xl:grow-0}   
     #demo-card-3 { @apply basis-[390px] grow xl:grow-0} 
+    .feature-card { @apply rounded-2xl border border-[#C9E6DB] bg-white}
 
     .gradient-text { @apply bg-linear-to-l text-transparent bg-clip-text from-secondary to-primary}
     .heading {@apply text-3xl lg:text-[42px] font-bold text-center leading-tight}
@@ -84,7 +85,7 @@
     .installation-plan {@apply p-4 rounded-3xl border border-[#E7EAEF] hover:border-secondary bg-white hover:bg-linear-180 hover:from-[#F0FFF9] hover:to-[#FFF]}
     .installation-plan.active {@apply !border-secondary bg-linear-180 from-[#F0FFF9] to-[#FFF]}
     .installation-plan.active > button {@apply !text-white !border-none !shadow-gradientBtn !bg-clip-padding !bg-gradient-to-l from-secondary to-primary cursor-pointer}
-    input::placeholder{@apply text-base font-normal text-[#7F8B9D]}
+     input::placeholder{@apply text-base font-normal text-[#7F8B9D]}
     
     .modal {@apply bg-black/60 backdrop-blur-sm w-full h-screen inset-0 fixed flex justify-center items-center z-30 opacity-0 invisible transition-all duration-300}
     .modal.active {@apply opacity-100 visible}
