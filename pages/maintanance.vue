@@ -1,15 +1,46 @@
 <template>
-    <section class="pt-26 lg:pt-40 mb-12 sm:mb-16 relative bg-linear-180 from-primary/15 to-white">
+<!--===============================
+           HERO PART START 
+     =================================-->
+     <section class="pt-26 lg:pt-40 mb-20 sm:mb-40 relative bg-linear-180 from-primary/15 to-white">
         <div class="container">
-            <div class="flex justify-between items-center gap-6">
-                <div class="max-w-[550px] w-full">
-                    <h1 class="heading mb-6 text-left">Keep Things Smooth With Our<span class="gradient-text"> iCare - Maintenance </span>Service</h1>
-                    <p class="text-base lg:text-lg font-normal">Trust us to manage every detail with exceptional care. Let us take care of your system’s health, so you can stay focused on what matters—growing your business.</p>
+            <div class="grid lg:grid-cols-2 lg:place-content-between">
+                <div class="max-lg:max-w-2xl max-lg:text-center max-lg:mx-auto mx-auto">
+                    <h1 class="heading mb-6">Keep Things Smooth With Our
+                        <span class="gradient-text"> iCare - Maintenance </span>
+                        Service
+                    </h1>
+                    <p class="text-base lg:text-lg font-normal lg:text-left text-center mb-12">Trust us to manage every detail with exceptional care. Let us take care of your system’s health, so you can stay focused on what matters—growing your business.</p>
+                    <NuxtImg class="max-w-[479px] w-full lg:hidden block mx-auto mb-12" src="/images/maintanance/banner.png"/>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8">
+                        <div v-for="glance in counters" class="flex items-center gap-6">
+                            <div class="w-16 h-16 flex-shrink-0 rounded-full flex items-center justify-center shadow-[0px_8px_32px_rgba(55,106,139,0.12)] bg-white">
+                                <NuxtImg :src="glance.vector" :alt="glance.name" :style="`filter: drop-shadow(${glance.shadow})`" class="w-8 h-8"/>
+                            </div>
+                            <div class="flex-auto text-left">
+                                <h3 :style="{color:`${glance.color}`}" class="text-3xl font-semibold flex items-center gap-0.5 mb-3">
+                                    <CountUp v-if="glance.count%2 != 0" decimal-places="1" :end-val="glance.count" class="text-[28px] font-extrabold"></CountUp>
+                                    <CountUp v-else :end-val="glance.count" class="text-[28px] font-extrabold"></CountUp>
+                                    <span class="leading-none -mt-2">+</span>
+                                </h3>
+                                <p class="text-base capitalize">{{glance.title}}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <NuxtImg class="flex-shrink-0 max-w-[480px] w-full ml-auto" src="/images/maintanance/banner.png"/>
+                <div>
+                    <NuxtImg class="max-w-[479px] w-full lg:block hidden ml-auto" src="/images/maintanance/banner.png"/>
+                </div>
             </div>
         </div>
-    </section>
+     </section>
+     <!--==============================
+           HERO PART END 
+     =================================-->
+
+    <!--===============================
+         PRICING PLAN PART START 
+    =================================-->
     <section class="container">
         <div class="max-w-[742px] w-full mx-auto mb-8">
             <h1 class="heading mb-6 text-center"><span class="gradient-text">Pick a Plan </span>—We’ll Handle the Rest</h1>
@@ -25,7 +56,7 @@
             </div>    
             <span class="text-sm font-medium whitespace-nowrap rounded-3xl px-2 py-0.5 border border-primary text-primary">20% Off</span>
         </div>
-        <div class="relative mb-26 lg:mb-40">
+        <div class="relative mb-20 lg:mb-40">
             <div class="overflow-x-auto overflow-y-hidden shadow-card rounded-3xl bg-white">
                 <span class="blur-rect"></span>
                 <table class="w-full">
@@ -83,10 +114,48 @@
             </div>
         </div>
     </section>
+    <!--===============================
+         PRICING PLAN PART END 
+    =================================-->
 </template>
 
 <script setup>
+import CountUp from 'vue-countup-v3';
 const switchValue = ref(true)
+const counters = ref([
+    {
+        "id": 1,
+        "count": 40,
+        "color": "#0F88F9",
+        "title": "Countries Served",
+        "vector": "/images/vector/world.png",
+        "shadow": "0px 6px 10px rgba(15, 136, 249, 0.30)"
+    },
+    {
+        "id": 2,
+        "count": 900,
+        "color": "#22B08E",
+        "title": "Happy Clients",
+        "vector": "/images/vector/smile.png",
+        "shadow":"0px 6px 10px rgba(74, 204, 107, 0.30)"
+    },
+    {
+        "id": 3,
+        "count": 4.9,
+        "color": "#761DFA",
+        "title": "Rating & Reviews",
+        "vector": "/images/vector/item.png",
+        "shadow": "0px 6px 10px 0px rgba(118, 29, 250, 0.30)"
+    },
+    {
+        "id": 4,
+        "count": 98,
+        "color": "#E4156F",
+        "title": "Client Satisfaction",
+        "vector": "/images/vector/heart.png",
+        "shadow": "0px 6px 10px 0px rgba(230, 26, 114, 0.30)"
+    }
+])
 const services = ref([
     { id: 1, name: "Priority support", bronze: true, silver: true, gold: true, platinum: true },
     { id: 2, name: "Priority technical support", bronze: true, silver: true, gold: true, platinum: true },

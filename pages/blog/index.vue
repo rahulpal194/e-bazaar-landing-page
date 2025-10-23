@@ -52,9 +52,17 @@
     <!--===============================
           BLOG PART START 
     =================================-->
-    <section class="container">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            <BlogCardComponent v-for="blog in blogs" :blog="blog" />
+    <section class="container mb-20 md:mb-40">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-12">
+            <BlogCard v-for="blog in blogs" :blog="blog" />
+        </div>
+        <div class="flex justify-end gap-6">
+            <button class="w-12 h-12 rounded-full bg-[#E9FFF4] flex items-center justify-center hover:bg-linear-to-l hover:from-primary hover:to-secondary hover:text-white">
+                <i class="icon-left"></i>
+            </button>
+            <button class="w-12 h-12 rounded-full primary-button flex items-center justify-center !px-0">
+                <i class="icon-right"></i>
+            </button>
         </div>
     </section>
     <!--===============================
@@ -68,14 +76,5 @@ import blogs from "~/assets/json/blogs.json";
 const categories = ref(['All', 'Recent', 'News', 'Article', 'Comparison'])
 const activeCategory = ref("All")
 const isOpen = ref(false)
-const dropdownContainer = ref(null)
-const handleClickOutside = (event) => {
-  if (
-    isOpen.value &&
-    dropdownContainer.value &&
-    !dropdownContainer.value.contains(event.target)
-  ) {
-    isOpen.value = false
-  }
-}
+
 </script>

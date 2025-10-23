@@ -107,7 +107,8 @@
     .thin-scrolling:hover::-webkit-scrollbar-thumb { @apply bg-primary }
     .thin-scrolling::-webkit-scrollbar { @apply w-[3px] }
     .thin-scrolling::-webkit-scrollbar { @apply rounded-2xl bg-transparent }
-    .tabBtn.active{@apply bg-[#FFF2F0]}
+    .tabBtn {@apply p-4 w-full text-start rounded-xl text-lg font-bold hover:bg-[#E9FFF4] flex justify-between items-center}
+    .tabBtn.active{@apply bg-[#E9FFF4]}
 
     .vertical-dropdown-group .vertical-dropdown-content {@apply hidden}
     .vertical-dropdown-group.active .vertical-dropdown-content { @apply flex}

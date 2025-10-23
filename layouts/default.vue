@@ -164,8 +164,8 @@
      <!--==========================
         SIDEBAR PART START 
      ==========================-->
-        <aside :class="[isOpen? 'active' : '']" class="drawer thin-scrolling">
-            <nav class="flex flex-col text-[#1A203C] [&_a]:last:border-none">
+            <aside :class="[isOpen? 'active' : '']" class="drawer thin-scrolling">
+                <nav class="flex flex-col text-[#1A203C] [&_a]:last:border-none">
                     <NuxtLink class="py-4 px-2 border-b border-[#E7EAEF]" to="/features"><span class="text-base font-medium">Features</span></NuxtLink>
                     <NuxtLink class="py-4 px-2 border-b border-[#E7EAEF]" to="/demo"><span class="text-base font-medium">Demo</span></NuxtLink>
                     <NuxtLink class="py-4 px-2 border-b border-[#E7EAEF]" to="/pricing"><span class="text-base font-medium">Pricing</span></NuxtLink>
@@ -274,9 +274,9 @@
                     </div>
                     <NuxtLink class="py-4 px-2 border-b border-[#E7EAEF]" to="#"><span class="text-base font-medium">Partner</span></NuxtLink>
                     <NuxtLink class="py-4 px-2 border-b border-[#E7EAEF]" to="#"><span class="text-primary text-base font-bold">Sign In</span></NuxtLink>
-            </nav>
-            <button class="cursor-pointer mt-4 py-2.5 w-full sm:py-3.5 px-6 sm:px-8 rounded-full text-white text-base sm:text-lg leading-6 font-bold gradient-button">Hire Us</button>
-        </aside>
+                </nav>
+                <button class="primary-button w-full">Hire Us</button>
+            </aside>
      <!--==========================
         SIDEBAR PART START 
      ==========================-->
@@ -432,7 +432,7 @@ import { useSticky } from '~/composable/sticky';
 const isOpen = ref(false)
 const {isSticky} = useSticky()
 
-const handledropdown = ($event) => {
+  const handledropdown = ($event) => {
   const targetBtn = $event.currentTarget;
   const dropdownGroup = targetBtn.closest('.dropdown-group');
 
