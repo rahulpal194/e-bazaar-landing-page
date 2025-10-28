@@ -20,14 +20,14 @@
      <section class="mb-20 sm:mb-40">
         <div class="container">
         <div class="grid col-span-1 md:grid-cols-3 gap-y-8 gap-x-8 lg:place-content-between">
-            <div class="md:col-span-1 origin-top relative">
-                <button @click="isOpen= !isOpen" class="flex md:hidden items-center justify-between gap-2 w-full h-16 px-6 rounded-full shadow-input bg-white">
+            <div ref="dropdownContainer" class="md:col-span-1 origin-top relative">
+                <button @click="isOpen= !isOpen" class="flex md:hidden items-center justify-between gap-2 w-full h-12 px-6 rounded-full shadow-input bg-white">
                     <span class="text-base font-medium capitalize text-heading">{{ activetab }}</span>
                     <i :class="isOpen? 'rotate-180':'rotate-0'" class="icon-chevron-down text-xl text-heading transition-all duration-300"></i>
                 </button>
-                <div :class="isOpen ? 'max-md:scale-y-100' : 'max-md:scale-y-0'" class="transition-all duration-300 origin-top w-full absolute md:sticky top-12 md:top-32 p-4 z-20 rounded-2xl bg-white shadow-[0px_6px_12px_0px_rgba(186,186,186,0.10)]">
+                <div :class="isOpen ? 'max-md:scale-y-100' : 'max-md:scale-y-0'" class="dropdown-sidebar">
                     <nav class="flex flex-col gap-2 text-[#1A203C]">
-                        <div v-for="tab in tabs">
+                        <div v-for="tab in documentation">
                             <div v-if="tab.dropdownContent" class="vertical-dropdown-group" :class="{ active: activetab === tab.name }">
                                 <button @click="handledropTab(tab.name, tab.dropdownContent[0])"
                                     :class="{ active: activetab === tab.name }"
@@ -141,7 +141,7 @@
                 <div v-if="activetab=='Environment Setup'">
                     <h2 class="text-[28px] font-bold mb-4">Environment Setup</h2>
                 </div>
-             </div>
+            </div>
         </div>
         </div>
      </section>
@@ -173,18 +173,9 @@
 </template>
 
 <script setup>
-    const isOpen = ref(false)
-    const tabs = ref([
-        {name: 'Getting Started', icon:'icon-fill-shutdown'},
-        {name: 'Prerequisite', icon:'icon-clipboard-text', dropdownContent:['Basic Knowledge', 'Server Requirement', 'Active Purchase Key','Mobile App']},
-        {name: 'Environment Setup', icon:'icon-env-setup'},
-        {name: 'Website Installation', icon:'icon-fill-install', dropdownContent:['Installation', 'Push Notification', 'Map Setting','Business Setting', 'Payment Gateway', 'SMS Gateway', 'Language Translate']},
-        {name: 'Mobile App', icon:'icon-fill-mobile'},
-        {name: 'Change Log', icon:'icon-change-log'},
-        {name: 'Support', icon:'icon-music-play'},
-        {name: 'Version Update', icon:'icon-fill-update'}
-    ])
-    
+    import documentation from 'assets/json/documentation.json'
+import { useClickOutside } from '~/composable/clickOutside';
+
     const activetab = ref('Getting Started');
     const activeContent = ref(null)
     const handleTab = (tab)=>{
@@ -194,4 +185,6 @@
       activetab.value = tab
       activeContent.value = content
     }
+
+    const { isOpen, dropdownContainer } = useClickOutside()
 </script>

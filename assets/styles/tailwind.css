@@ -72,6 +72,7 @@
     .dropdown-group.active .dropdown-btn i {@apply rotate-180 transition-all duration-300}
     .dropdown-group .dropdown-content {@apply hidden}
     .dropdown-group.active .dropdown-content {@apply flex}
+    .dropdown-sidebar {@apply transition-all duration-300 origin-top w-full absolute md:sticky top-12 md:top-32 p-4 z-20 rounded-2xl bg-white shadow-faq}
 
     #demo-card-1 { @apply basis-[298px] grow xl:grow-0} 
     #demo-card-2 { @apply basis-[390px] grow xl:grow-0}   

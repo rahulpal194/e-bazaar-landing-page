@@ -34,10 +34,14 @@
           TESTIMONIAL PART START 
     =================================-->
     <div class="container">
-       <TestimonialCard/>
+        <div class="flex flex-wrap gap-6 mb-20 sm:mb-40"> 
+            <TestimonialCard v-for="review in testimonial" :review="review" :width="review.size.width" :height="review.size.height" color=""/>
+        </div>
     </div>
-
     <!--==============================
           TESTIMONIAL PART END 
     =================================-->
 </template>
+<script setup>
+ import testimonial from 'assets/json/testimonial.json'
+</script>
