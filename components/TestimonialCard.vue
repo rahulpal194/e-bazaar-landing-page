@@ -1,5 +1,5 @@
 <template>
-    <div class="p-6 rounded-2xl relative bg-[#FFFBF4]" :style="{ width:width, height:height}">
+    <div class="p-6 rounded-2xl relative" :id="`review-card-${review.id}`">
         <p class="text-lg font-normal mb-6">{{ review.message }}</p>
         <div class="flex gap-4 items-center">
             <NuxtImg :src="review.profileImg" class="w-15 h-15 rounded-full"></NuxtImg>
@@ -22,7 +22,6 @@
         review:({
             type: Object
         }),
-        width : ({type:String}),
-        height : ({type:String})
+
     })
 </script>

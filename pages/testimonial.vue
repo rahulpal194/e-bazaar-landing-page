@@ -35,7 +35,7 @@
     =================================-->
     <div class="container">
         <div class="flex flex-wrap gap-6 mb-20 sm:mb-40"> 
-            <TestimonialCard v-for="review in testimonial" :review="review" :width="review.size.width" :height="review.size.height" color=""/>
+            <TestimonialCard v-for="review in testimonial" :review="review" />
         </div>
     </div>
     <!--==============================

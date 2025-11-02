@@ -4,87 +4,48 @@
         "name": "SkanderH",
         "profileImg" : "/images/testimonial/01.png",
         "message": "I bought a lot of Restaurant/Delivery apps on Codecanyon and this will be my one to use. He took all the good features and put it in one product. There are still a couple things missing but I'm sure in the future updates they will be added. For the price you get the most with this product.",
-        "rating":5,
-        "size":{
-            "width":"359px",
-            "height":"396px"
-        }
+        "rating":5
     },
     {
         "id":2,
         "name": "HamidBhatti",
         "profileImg" : "/images/testimonial/02.png",
         "message": "The code quality and customer support provided by this application are exceptional. I highly recommend anyone considering trying it to go ahead. The developer is very approachable and helpful if any issues arise. Additionally, the clean and well-structured code made it easy for me to make customizations as needed. Highly recommended!",
-        "rating":5,
-        "size":{
-            "width":"359px",
-            "height":"477px"
-        }
+        "rating":5
     },
     {
         "id":3,
         "name": "ODApplications",
         "profileImg" : "/images/testimonial/03.png",
         "message": "Both the code quality and custom support are above and beyond within this application combo. I highly recommend anyone out there wanting to give this a shot to do it. The dev is very friendly and helpful if anything goes wrong. Additionally I was able to make customizations as needed without any issues due to the clean foundation the code was built on. Highly recommended.",
-        "rating":5,
-        "size":{
-            "width":"359px",
-            "height":"477px"
-        }
+        "rating":5
     },
     {
         "id":4,
         "name": "Precident",
         "profileImg" : "/images/testimonial/04.png",
         "message": "FoodKing is a fantastic solution for anyone managing a food delivery service. The system is incredibly well-designed, combining a user-friendly admin panel with a seamless delivery man app. The POS integration is smooth and ensures everything runs efficiently, from order placement to delivery. The customization options make it versatile for different types of restaurants, and the performance is fast and reliable.",
-        "rating":5,
-        "size":{
-            "width":"359px",
-            "height":"531px"
-        }
+        "rating":5
     },
     {
         "id":5,
         "name": "FredBoss",
         "profileImg" : "/images/testimonial/05.png",
         "message": "I bought StackFood thinking it was the best restaurant system on CodeCanyon, and even though I installed it without any issues, it was impossible to translate due to errors. Additionally, the Flutter version was not very appealing, and to top it off, the support was poor, and they charged for everything. So, I decided to buy FoodKing as an emergency solution, and what a surprise! It's spectacular! I was able to translate it without any problems, and the platform has everything a restaurant chain needs to operate online. Oh, I almost forgot, the design is beautiful!!! I couldn't be happier, and the support is excellent. Thank you very much.",
-        "rating":5,
-        "size":{
-            "width":"743px",
-            "height":"450px"
-        }
+        "rating":5
     },
     {
         "id":6,
         "name": "Sathyasai",
         "profileImg" : "/images/testimonial/09.png",
         "message": "Support Team is awsome and please make update on code and make more reliable to users so that they can install more easier and make some changes in documentation .support 5 stardesgin 5 stardocumentation 4 starcode quality 4 Best Support They deserve 5 star thanks !!",
-        "rating":5,
-        "size":{
-            "width":"551px",
-            "height":"423px"
-        }
+        "rating":5
     },
     {
         "id":7,
         "name": "Piano Kids",
         "profileImg" : "/images/testimonial/09.png",
         "message": "Very timely and responsive Support.The code works smoothly. It is good to see that the application continues to be updated based on observations.However, I believe the installation process/steps could be improved the way other providers does because the current approach present risk should the portal for generating license not be available. Anyway, keep the good work going.",
-        "rating":5,
-        "size":{
-            "width":"551px",
-            "height":"423px"
-        }
-    },
-    {
-        "id":8,
-        "name": "InfTechost",
-        "profileImg" : "/images/testimonial/09.png",
-        "message": "I was really fascinated by how well this code met what people were actually looking for... Ideal for restaurants and coffee shops...",
-        "rating":5,
-        "size":{
-            "width":"551px",
-            "height":"423px"
-        }
+        "rating":5
     }
 ]

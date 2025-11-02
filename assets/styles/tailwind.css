@@ -37,9 +37,9 @@
 }
 
 @layer base{
-     html {@apply scroll-smooth sm:overflow-x-auto overflow-x-hidden}
-     body {@apply font-plus text-[#323D4E] !scroll-smooth sm:overflow-x-visible overflow-x-hidden}
-     button {@apply cursor-pointer}
+    html {@apply scroll-smooth sm:overflow-x-auto overflow-x-hidden}
+    body {@apply font-plus text-[#323D4E] !scroll-smooth sm:overflow-x-visible overflow-x-hidden}
+    button {@apply cursor-pointer}
     .blur-rect {@apply absolute -z-10 top-0 left-1/2 -translate-x-1/2 w-[580px] h-[75px] rotate-[35deg] blur-[300px] bg-[#95FFD6]}
     .button {@apply h-13 px-6 sm:px-8 shadow-btn hover:bg-gradient-to-l hover:from-secondary hover:to-primary border hover:border-current border-secondary rounded-full text-secondary whitespace-nowrap hover:text-white text-base font-bold hover:shadow-gradientBtn transition-all duration-300}
     .blogNavigation {@apply flex flex-col lg:flex-row items-start lg:items-center origin-top transition-all duration-300 max-lg:absolute max-lg:top-12 max-lg:left-0 max-lg:z-10 max-lg:p-2 max-lg:w-full max-lg:shadow-paper max-lg:rounded-xl max-lg:bg-white}
@@ -102,6 +102,14 @@
     .pricePlan.active > button {@apply !text-white !border-none !shadow-gradientBtn !bg-clip-padding !bg-gradient-to-b from-secondary to-primary cursor-pointer}
     .primary-button { @apply h-13 px-6 sm:px-8 bg-gradient-to-l from-secondary to-primary rounded-full text-white text-base whitespace-nowrap font-bold shadow-gradientBtn active:shadow-none transition-all duration-300 hover:from-primary hover:to-secondary}
     
+    [id^="review-card-"]:nth-child(7n+1) {@apply bg-[#FFFBF4] basis-[359px] grow xl:grow-0}
+    [id^="review-card-"]:nth-child(7n+2) {@apply bg-[#F5F9FF] basis-[359px] grow xl:grow-0}
+    [id^="review-card-"]:nth-child(7n+3) {@apply bg-[#FFFCF2] basis-[359px] grow xl:grow-0}
+    [id^="review-card-"]:nth-child(7n+4) {@apply bg-[#F6FFF7] basis-[359px] grow xl:grow-0}
+    [id^="review-card-"]:nth-child(7n+5) {@apply bg-[#FFF8F4] basis-[743px] grow xl:grow-0}
+    [id^="review-card-"]:nth-child(7n+6) {@apply bg-[#F2FDFF] basis-[551px] grow xl:grow-0}
+    [id^="review-card-"]:nth-child(7n+7) {@apply bg-[#FBFFF3] basis-[551px] grow xl:grow-0}
+
     .sticky-header { @apply backdrop-blur-[100px] shadow-header bg-white/90 }
 
     .title {@apply text-sm sm:text-base font-medium text-primary px-4 py-2.5 leading-tight rounded-full w-fit mx-auto border border-[#E0E6F8]}
@@ -127,8 +135,6 @@
     .vertical-dropdown-group.active .vertical-dropdown-content { @apply flex}
 
     .whatsapp-button {@apply h-13 px-6 sm:px-8 bg-gradient-to-l rounded-full text-white text-base whitespace-nowrap font-bold active:shadow-none bg-linear-270 from-[#2AE971] to-[#00B142] shadow-whatsapp transition-all duration-300 cursor-pointer}
-   
-    
 }
 @layer utilities{
     .container{@apply max-w-[1158px] w-full mx-auto px-4}
