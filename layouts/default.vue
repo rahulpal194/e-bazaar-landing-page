@@ -114,7 +114,7 @@
                     <div class="relative group">
                         <button class="capitalize font-medium group-hover:text-primary">Company</button>
                         <div class="absolute top-12 left-0 z-10 w-[260px] p-4 rounded-3xl shadow-paper bg-white transition-all duration-300 origin-top scale-y-0 group-hover:scale-y-100">
-                            <NuxtLink to="#" class="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                            <NuxtLink to="/about" class="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
                                 <span class="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-blue bg-gradient-to-l from-[#FF62A6] to-[#ED0067]">
                                     <i class="icon-clipboard-text text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
                                 </span>
@@ -241,7 +241,7 @@
                     <div class="dropdown-group">
                         <button @click="handledropdown($event)" class="dropdown-btn py-4 px-2 border-b border-[#E7EAEF] flex justify-between w-full"><span class="text-base font-medium">Company</span> <i class="icon-chevron-down text-base"></i></button>
                         <div class="flex-col dropdown-content">
-                            <NuxtLink class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
+                            <NuxtLink to="/about" class="py-4 px-2 border-b border-[#E7EAEF] flex gap-3 items-center">
                                 <span class="w-7.5 h-7.5 rounded-full bg-linear-270 from-[#FF62A6] to-[#ED0067] flex justify-center items-center">
                                     <i class="icon-clipboard-text text-base text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
                                 </span>
@@ -397,7 +397,7 @@
                 </div>
             </div>
         </div>
-        <div class="my-6.5 border-t border-[#FFEAF2] relative">
+        <div class="my-6.5 border-t border-[#aefdbf] relative">
             <NuxtLink to="#" class="!w-13 !h-13 !p-0 rounded-full primary-button flex items-center justify-center absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2" aria-label="Back to Top">
                 <i class="icon-chevron-up text-3xl text-white"></i>
             </NuxtLink>

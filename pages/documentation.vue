@@ -68,12 +68,12 @@
                 <div v-if="activetab=='Getting Started'">
                     <h2 class="text-[28px] font-bold mb-4">Getting started</h2>
                     <div class="border-t border-primary pt-6">
-                        <p class="text-2xl font-medium mb-8">FoodKing - Restaurant Food Delivery System with Admin Panel & Delivery Man App | Restaurant POS</p>
+                        <p class="text-2xl font-medium mb-8">StoreKing - eCommerce (Grocery, Pharmacy, Supershop) App with Laravel Website & Admin Panel with POS | Inventory Management</p>
                         <ul class="grid grid-cols-2 gap-y-6 mb-8 sm:mb-12">
-                            <li class="text-base font-bold">Version: <span class="font-medium">3.2</span></li>
-                            <li class="text-base font-bold">Created: <span class="font-medium">1 June, 2023</span></li>
+                            <li class="text-base font-bold">Version: <span class="font-medium">1.7</span></li>
+                            <li class="text-base font-bold">Created: <span class="font-medium">17 December, 2024</span></li>
                             <li class="text-base font-bold">Author: <span class="font-medium text-[#007EDD]"><NuxtLink to="/inilabs">iNiLabs</NuxtLink></span></li>
-                            <li class="text-base font-bold">Last Update: <span class="font-medium">8 June, 2023</span></li>
+                            <li class="text-base font-bold">Last Update: <span class="font-medium">27 October, 2025</span></li>
                         </ul>
                         <div class="w-full p-4 rounded-xl border border-[#FFF4BC] bg-[#FFFEF4]">
                              <p class="text-base font-medium">If you have any questions or need any help that are not in this documentation file, Please feel free to <NuxtLink class="font-bold text-primary" to="/support">create a Support Ticket.</NuxtLink></p>
@@ -83,22 +83,46 @@
                 <div v-if="activetab=='Prerequisite' && activeContent=='Basic Knowledge'">
                     <h2 class="text-[28px] font-bold mb-4">Basic Knowledge</h2>
                     <div class="border-t border-primary pt-6">
-                        <p class="text-2xl font-medium mb-8">To install, set up, and publish FoodKing with your branding, it's necessary to possess fundamental knowledge in both server-side and mobile app development since the system comprises multiple features for web and mobile applications.</p>
-                        <ul class="mb-8 list-disc ps-5">
-                            <li>IDE for Mobile and Web development, we preferred Android Studio and VSCode.</li>
-                            <li>Flutter SDK and JDK with path setup in your IDE.</li>
-                            <li>Real server Server related knowledge like apache or local machine server, we preferred to use a real server.</li>
+                        <p class="text-2xl font-medium mb-8">To install, set up, and customize StoreKing with your branding, it is essential to have a basic understanding of server-side operations. The system includes a comprehensive suite of features for web applications.</p>
+                        <ul class="mb-8 list-disc ps-5 flex flex-col gap-3">
+                            <li>IDE for Web development, we preferred VSCode.</li>
+                            <li>Real Server related knowledge like apache or local machine server, we preferred to use a real server.</li>
                             <li>Server related knowledge and we preferred cPanel in your server for quick installation</li>
-                            <li>Basic knowledge in PHP, NPM, Vue, Node, Dart, Laravel and Flutter if you want to do some customization yourself (Not compulsory).</li>
-                            <li>basic knowledge about google cloud and firebase</li>
+                            <li>Basic knowledge in PHP, NPM, Vue, Node, Laravel if you want to do some customization yourself (Not compulsory).</li>
                         </ul>
                         <div class="w-full p-4 rounded-xl border border-[#FFF4BC] bg-[#FFFEF4] mb-8">
-                             <p class="text-base font-medium">Note: Remember! Envato's pricing does not cover installation or app publishing support. It is your responsibility to follow the installation instructions outlined in the documentation, as well as any necessary steps for setup and branding-related changes. We are not liable for any errors you may make during the process. Additionally, any customizations you make are entirely your responsibility.</p>
+                             <p class="text-base font-medium">Note: Remember! Envato's pricing does not cover installation. It is your responsibility to follow the installation instructions outlined in the documentation, as well as any necessary steps for setup and branding-related changes. We are not liable for any errors you may make during the process. Additionally, any customizations you make are entirely your responsibility.</p>
                         </div>
                     </div>
                 </div>
                 <div v-if="activetab=='Prerequisite' && activeContent == 'Server Requirement'" >
                     <h2 class="text-[28px] font-bold mb-4">Server Requirement</h2>
+                    <div class="border-t border-primary pt-6">
+                        <p class="text-2xl font-medium mb-8">Before install, please make sure you have the components bellow enable on your server</p>
+                        <ul class="mb-8 list-disc ps-5 flex flex-col gap-3">
+                            <li>PHP 8.2 or Greater</li>
+                            <li>OpenSSL PHP Extension</li>
+                            <li>PDO PHP Extension</li>
+                            <li>Mbstring PHP Extension</li>
+                            <li>Tokenizer PHP Extension</li>
+                            <li>XML PHP Extension</li>
+                            <li>Ctype PHP Extension</li>
+                            <li>JSON PHP Extension</li>
+                            <li>BCMath PHP Extension</li>
+                            <li>GD PHP Extension (or Imagick PHP Extension)</li>
+                            <li>PHP Zip Archive</li>
+                            <li>PHP JSON</li>
+                            <li>PHP cURL</li>
+                            <li>PHP Exif</li>
+                            <li>PHP fileinfo</li>
+                            <li>PHP Zip Archive</li>
+                            <li>Rewrite Module (Apache or Nginx)</li>
+                            <li>open_basedir must be disabled</li>
+                        </ul>
+                        <div class="w-full p-4 rounded-xl border border-[#FFF4BC] bg-[#FFFEF4] mb-8">
+                             <p class="text-base font-medium">Note: Remember! Envato's pricing does not cover installation. It is your responsibility to follow the installation instructions outlined in the documentation, as well as any necessary steps for setup and branding-related changes. We are not liable for any errors you may make during the process. Additionally, any customizations you make are entirely your responsibility.</p>
+                        </div>
+                    </div>
                 </div>
                 <div v-if="activetab=='Prerequisite' && activeContent == 'Active Purchase Key'" >
                     <h2 class="text-[28px] font-bold mb-4">Active Purchase Key</h2>
@@ -137,6 +161,164 @@
                 </div>
                 <div v-if="activetab=='Prerequisite' && activeContent == 'Mobile App'" >
                     <h2 class="text-[28px] font-bold mb-4">Mobile App</h2>
+                </div>
+                <div v-if="activetab=='Support'">
+                    <h2 class="text-[28px] font-bold mb-4">Support</h2>
+                    <div class="border-t border-primary pt-6">
+                        <p class="text-base font-normal mb-6">If this documentation doesn’t answer your questions, please create a support ticket on the 
+                            <NuxtLink to="https://inilabsn.freshdesk.com/" class="py-1.5 px-3 rounded-sm text-white bg-blue-500 block w-fit">item support ticket</NuxtLink>
+                        </p> 
+                        
+                        <p class="text-base font-normal mb-4 leading-relaxed">We are located in GMT +6:30 time zone and we answer all questions within 12-24 hours in weekdays. In some rare cases the waiting time can be to 48 hours. (except holiday seasons which might take longer).</p>
+                        <div class="doc-warn-div">
+                            <p><span class="doc-badge-red">Note:</span> While we aim to provide the best support possible, please keep in mind that it only extends to verified buyers and only to issues related to our script's & app's like bugs and errors. Custom modifications or third party module implementations are not included.</p>
+                        </div>
+                        <div class="flex items-center gap-1 text-2xl my-6">
+                            <p>Don’t forget to Rate this script</p>
+                            <div class="flex items-center gap-1">
+                                <i class="icon-fill-star text-[#ffc107] text-2xl"></i>
+                                <i class="icon-fill-star text-[#ffc107] text-2xl"></i>
+                                <i class="icon-fill-star text-[#ffc107] text-2xl"></i>
+                                <i class="icon-fill-star text-[#ffc107] text-2xl"></i>
+                                <i class="icon-fill-star text-[#ffc107] text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="doc-info-div">
+                            <p class="leading-relaxed">Please Add your Review (Opinion) for Our script. It would be a great support for us. Go to your <span class="font-bold">Codecanyon Profile > Downloads Tab ></span> & then You can Rate & Review for our script.Thank You.</p>
+                        </div>
+                    </div>
+                </div>
+                <div v-if="activetab=='Prerequisite' && activeContent == 'Server Requirement'" >
+                    <h2 class="text-[28px] font-bold mb-4">Server Requirement</h2>
+                    <div class="border-t border-primary pt-6">
+                        <p class="text-2xl font-medium mb-8">Before install, please make sure you have the components bellow enable on your server</p>
+                        <ul class="mb-8 list-disc ps-5 flex flex-col gap-3">
+                            <li>PHP 8.2 or Greater</li>
+                            <li>OpenSSL PHP Extension</li>
+                            <li>PDO PHP Extension</li>
+                            <li>Mbstring PHP Extension</li>
+                            <li>Tokenizer PHP Extension</li>
+                            <li>XML PHP Extension</li>
+                            <li>Ctype PHP Extension</li>
+                            <li>JSON PHP Extension</li>
+                            <li>BCMath PHP Extension</li>
+                            <li>GD PHP Extension (or Imagick PHP Extension)</li>
+                            <li>PHP Zip Archive</li>
+                            <li>PHP JSON</li>
+                            <li>PHP cURL</li>
+                            <li>PHP Exif</li>
+                            <li>PHP fileinfo</li>
+                            <li>PHP Zip Archive</li>
+                            <li>Rewrite Module (Apache or Nginx)</li>
+                            <li>open_basedir must be disabled</li>
+                        </ul>
+                        <div class="w-full p-4 rounded-xl border border-[#FFF4BC] bg-[#FFFEF4] mb-8">
+                             <p class="text-base font-medium">Note: Remember! Envato's pricing does not cover installation. It is your responsibility to follow the installation instructions outlined in the documentation, as well as any necessary steps for setup and branding-related changes. We are not liable for any errors you may make during the process. Additionally, any customizations you make are entirely your responsibility.</p>
+                        </div>
+                    </div>
+                </div>
+                <div v-if="activetab=='Change Log' && activeContent == 'v1.7'">
+                    <h2 class="text-[28px] font-bold mb-4">Changelog</h2>
+                    <div class="border-t border-primary pt-6">
+                        <h6 class="text-2xl font-semibold mb-8">Version 1.7(27 Oct 2025)</h6>
+                        <ul class="text-base font-normal flex flex-col gap-3 list-disc list-inside">
+                            <li>Added MyFatoorah payment gateway</li>
+                            <li>Added Easypaisa payment gateway</li>
+                            <li>Fixed fraction calculation issue in POS</li>
+                            <li>Improved product sorting in the Purchase module</li>
+                            <li>Improved “Add to Cart” functionality on the frontend</li>
+                            <li>Fixed wish list now updates instantly without page reload</li>
+                            <li>Fixed coupon-related bugs on the frontend</li>
+                            <li>Fixed maximum purchase quantity issues in the Product module</li>
+                            <li>Customer app latest version update (flutter: 3.35.7, Dart: 3.9.2)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div v-if="activetab=='Change Log' && activeContent == 'v1.6'">
+                    <h2 class="text-[28px] font-bold mb-4">Changelog</h2>
+                    <div class="border-t border-primary pt-6">
+                        <h6 class="text-2xl font-semibold mb-8">Version 1.6(15 Sep 2025)</h6>
+                        <ul class="text-base font-normal flex flex-col gap-3 list-disc list-inside">
+                            <li>Pos module update.</li>
+                            <li>Slider issue fix.</li>
+                            <li>Purchase module update.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div v-if="activetab=='Change Log' && activeContent == 'v1.5'">
+                    <h2 class="text-[28px] font-bold mb-4">Changelog</h2>
+                    <div class="border-t border-primary pt-6">
+                        <h6 class="text-2xl font-semibold mb-8">Version 1.5(27 July 2025)</h6>
+                        <ul class="list-disc list-inside text-base font-normal flex flex-col gap-3">
+                            <li>PhonePe payment gateway api update.</li>
+                            <li>Category name overlap issue solved.</li>
+                            <li>Added convenient download icon for the purchase payment attachment.</li>
+                            <li>Category RTL design issue improved.</li>
+                            <li>Maximum purchase quantity issue fixed.</li>
+                            <li>Minor bug fix.</li>
+                            <li>Customer app Flutter SDK version updated to 3.32.7 and dart version 3.8.1.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div v-if="activetab=='Change Log' && activeContent == 'v1.4'">
+                    <h2 class="text-[28px] font-bold mb-4">Changelog</h2>
+                    <div class="border-t border-primary pt-6">
+                        <h6 class="text-2xl font-semibold mb-8">Version 1.4(25 June 2025)</h6>
+                        <ul class="text-base font-normal flex flex-col gap-3 list-disc list-inside">
+                            <li>Profile update minor bug fix</li>
+                            <li>Login process performance improved</li>
+                            <li>Push notification minor bug fix</li>
+                            <li>Pos minor bug fix</li>
+                            <li>Purchase minor bug fix</li>
+                        </ul>
+                    </div>
+                </div>
+                <div v-if="activetab=='Change Log' && activeContent == 'v1.3'">
+                    <h2 class="text-[28px] font-bold mb-4">Changelog</h2>
+                    <div class="border-t border-primary pt-6">
+                        <h6 class="text-2xl font-semibold mb-8">Version 1.3(20 May 2025)</h6>
+                        <ul class="text-base font-normal flex flex-col gap-3 list-disc list-inside">
+                            <li>Solved inactive category show issue on frontend.</li>
+                            <li>Minor bug fix.</li>
+                            <li>Customer app compatible with Flutter SDK 3.29.3.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div v-if="activetab=='Change Log' && activeContent == 'v1.2'">
+                    <h2 class="text-[28px] font-bold mb-4">Changelog</h2>
+                    <div class="border-t border-primary pt-6">
+                        <h6 class="text-2xl font-semibold mb-8">Version 1.2(17 April 2025)</h6>
+                        <ul class="text-base font-normal flex flex-col gap-3 list-disc list-inside">
+                            <li>Added cross icon on the search bar to clear input.</li>
+                            <li>Category active/inactive bug fix.</li>
+                            <li>Outlet phone number minor bug fix.</li>
+                            <li>Enhanced validation messages for better clarity.</li>
+                            <li>Enhanced styling for the date input field.</li>
+                            <li>Customer app compatible with Flutter SDK 3.29.2.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div v-if="activetab=='Change Log' && activeContent == 'v1.1'">
+                    <h2 class="text-[28px] font-bold mb-4">Changelog</h2>
+                    <div class="border-t border-primary pt-6">
+                        <h6 class="text-2xl font-semibold mb-8">Version 1.1(22 Feb 2025)</h6>
+                        <ul class="list-disc list-inside text-base font-normal flex flex-col gap-3">
+                            <li>Added upload image in checkout page.</li>
+                            <li>Added file attachment option in product create module.</li>
+                            <li>Barcode style minor bug fix.</li>
+                            <li>Select box style minor bug fix.</li>
+                            <li>Country code minor bug fix.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div v-if="activetab=='Change Log' && activeContent == 'v1.0'">
+                    <h2 class="text-[28px] font-bold mb-4">Changelog</h2>
+                    <div class="border-t border-primary pt-6">
+                        <h6 class="text-2xl font-semibold mb-8">Version 1.0 (17 December, 2024)</h6>
+                        <ul class="text-base font-normal flex flex-col gap-3">
+                            <li>Initial Release</li>
+                        </ul>
+                    </div>
                 </div>
                 <div v-if="activetab=='Environment Setup'">
                     <h2 class="text-[28px] font-bold mb-4">Environment Setup</h2>

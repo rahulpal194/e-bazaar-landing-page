@@ -38,7 +38,7 @@
 
 @layer base{
     html {@apply scroll-smooth sm:overflow-x-auto overflow-x-hidden}
-    body {@apply font-plus text-[#323D4E] !scroll-smooth sm:overflow-x-visible overflow-x-hidden}
+    body {@apply font-plus text-[#323D4E] !scroll-smooth sm:overflow-x-visible overflow-x-hidden selection:bg-primary}
     button {@apply cursor-pointer}
     .blur-rect {@apply absolute -z-10 top-0 left-1/2 -translate-x-1/2 w-[580px] h-[75px] rotate-[35deg] blur-[300px] bg-[#95FFD6]}
     .button {@apply h-13 px-6 sm:px-8 shadow-btn hover:bg-gradient-to-l hover:from-secondary hover:to-primary border hover:border-current border-secondary rounded-full text-secondary whitespace-nowrap hover:text-white text-base font-bold hover:shadow-gradientBtn transition-all duration-300}
@@ -86,7 +86,7 @@
     .installation-plan {@apply p-4 rounded-3xl border border-[#E7EAEF] hover:border-secondary bg-white hover:bg-linear-180 hover:from-[#F0FFF9] hover:to-[#FFF]}
     .installation-plan.active {@apply !border-secondary bg-linear-180 from-[#F0FFF9] to-[#FFF]}
     .installation-plan.active > button {@apply !text-white !border-none !shadow-gradientBtn !bg-clip-padding !bg-gradient-to-l from-secondary to-primary cursor-pointer}
-     input::placeholder{@apply text-base font-normal text-[#7F8B9D]}
+    input::placeholder{@apply text-base font-normal text-[#7F8B9D]}
     
     .modal {@apply bg-black/60 backdrop-blur-sm w-full h-screen inset-0 fixed flex justify-center items-center z-30 opacity-0 invisible transition-all duration-300}
     .modal.active {@apply opacity-100 visible}
@@ -96,6 +96,8 @@
     .navbtn {@apply w-fit text-base lg:text-lg font-semibold leading-5 lg:leading-6 rounded-full px-4 py-3 flex items-center whitespace-nowrap flex-shrink-0 gap-2}
     .navbtn.active{@apply !bg-primary !text-white}
     .navbtn:hover{@apply bg-linear-90 from-[#C8F9E5] to-white !text-black transition-all duration-300}
+    .navgradientBg {@apply w-full h-12 absolute left-0 right-0 top-1/2 -translate-y-1/2 -z-10 bg-linear-270 from-[#FFC7A0] from-0% via-[#9BBEFF] via-50% to-[#FFA797] to-100% blur-[30px]}
+
 
     .pricePlan {@apply border border-[#E7EAEF] hover:border-secondary bg-white hover:bg-linear-180 hover:from-[#FFF6F5] hover:to-[#FFF]}
     .pricePlan.active {@apply !border-secondary bg-linear-180 from-[#FFF6F5] to-[#FFF]}
@@ -119,6 +121,7 @@
     .thin-scrolling::-webkit-scrollbar { @apply rounded-2xl bg-transparent }
     .tabBtn {@apply p-4 w-full text-start rounded-xl text-lg font-bold hover:bg-[#E9FFF4] flex justify-between items-center}
     .tabBtn.active{@apply bg-[#E9FFF4]}
+    .tab-content {@apply scroll-mt-20 md:scroll-mt-45 lg:scroll-mt-60}
 
     .vertical-dropdown-group .vertical-dropdown-content {@apply hidden}
     .vertical-dropdown-group.active .vertical-dropdown-content { @apply flex}
@@ -135,6 +138,11 @@
     .vertical-dropdown-group.active .vertical-dropdown-content { @apply flex}
 
     .whatsapp-button {@apply h-13 px-6 sm:px-8 bg-gradient-to-l rounded-full text-white text-base whitespace-nowrap font-bold active:shadow-none bg-linear-270 from-[#2AE971] to-[#00B142] shadow-whatsapp transition-all duration-300 cursor-pointer}
+
+    .doc-info-div {@apply w-full p-4 rounded-md border border-[#bee5eb] bg-[#d1ecf1] mb-4 text-[#0c5460] flex gap-2 items-center}
+    .doc-badge-red {@apply bg-[#dc3545] text-white uppercase px-1 py-0.5 rounded-sm text-xs font-bold}
+    .doc-warn-div {@apply w-full p-4 rounded-xl border border-[#ffeeba] bg-[#fff3cd] mb-4 text-[#856404]}
+    .doc-danger-div {@apply w-full p-4 rounded-xl border border-[#f8d7da] bg-[#f5c6cb] mb-8 text-[#721c24]}
 }
 @layer utilities{
     .container{@apply max-w-[1158px] w-full mx-auto px-4}

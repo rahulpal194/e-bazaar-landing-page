@@ -38,7 +38,7 @@
         <div class="container">
             <div class="max-w-[934px] w-full mx-auto mb-12 sm:mb-16">
                 <h1 class="heading mb-6">eBazaar Has<span class="gradient-text"> Everything to Manage </span>Your Retail eCommerce Business with Ease</h1>
-                 <p class="text-base lg:text-lg font-normal text-center lg:px-24">Step inside and explore the full eBazaar experience that are designed to simplify your store management and boost sales.</p>
+               <p class="text-base lg:text-lg font-normal text-center lg:px-24">Step inside and explore the full eBazaar experience that are designed to simplify your store management and boost sales.</p>
             </div>
             <div class="flex flex-wrap gap-6">
                 <NuxtLink href="#" v-for="ecosystem in ecosystems.slice(0,4)" :id="`card-${ecosystem.id}`" class="bg-[#F6F9FC] rounded-2xl p-6 hover:shadow-card hover:bg-white transition-all duration-300 relative">
