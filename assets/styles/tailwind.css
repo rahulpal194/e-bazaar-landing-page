@@ -98,7 +98,7 @@
     .navbtn:hover{@apply bg-linear-90 from-[#C8F9E5] to-white !text-black transition-all duration-300}
     .navgradientBg {@apply w-full h-12 absolute left-0 right-0 top-1/2 -translate-y-1/2 -z-10 bg-linear-270 from-[#FFC7A0] from-0% via-[#9BBEFF] via-50% to-[#FFA797] to-100% blur-[30px]}
 
-
+    .title {@apply text-base font-medium py-2.5 px-4 border border-[#E0E6F8] rounded-full mb-6 text-primary}
     .pricePlan {@apply border border-[#E7EAEF] hover:border-secondary bg-white hover:bg-linear-180 hover:from-[#FFF6F5] hover:to-[#FFF]}
     .pricePlan.active {@apply !border-secondary bg-linear-180 from-[#FFF6F5] to-[#FFF]}
     .pricePlan.active > button {@apply !text-white !border-none !shadow-gradientBtn !bg-clip-padding !bg-gradient-to-b from-secondary to-primary cursor-pointer}

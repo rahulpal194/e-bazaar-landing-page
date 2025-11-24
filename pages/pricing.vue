@@ -115,7 +115,7 @@
      =================================-->
      <ActionComponent>
         <div class="flex flex-col justify-center items-center max-w-[934px] w-full mx-auto">
-            <h2 class="text-3xl md:text-[42px] leading-tight text-center font-bold mb-6">Start Your Journey with eBazaar & Build a
+            <h2 class="heading text-center mb-6">Start Your Journey with eBazaar & Build a
                 <span class="gradient-text">Retail eCommerce Business</span>
                 Today!
                 </h2>

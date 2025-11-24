@@ -47,7 +47,7 @@
                         <div class="border-t border-secondary pt-6">
                             <div v-for="(faq,index) in content.faqs" @click="handleFaq(index)" class="group p-6 text-left w-full mb-6 cursor-pointer bg-white rounded-xl shadow-faq">
                                 <div class="flex items-center gap-3 justify-between group-hover:text-primary">
-                                    <h6 class="text-lg/[23px] font-semibold ">{{ faq.question }}</h6>
+                                    <h6 class="text-lg/[23px] font-semibold">{{ faq.question }}</h6>
                                     <i :class="{ 'rotate-180': faqOpen[index] }" class="icon-circle-down text-xl gradient-text rotate-0 transition-all duration-300"></i>
                                 </div>
                                 <div class="h-0 origin-top faq-text overflow-hidden transition-all duration-300 ease-in-out">

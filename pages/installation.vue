@@ -72,7 +72,7 @@
      =================================-->
      <ActionComponent>
         <div class="flex flex-col justify-center items-center">
-            <h2 class="text-3xl md:text-[42px] leading-tight text-center font-bold mb-3">Curious to<span class="gradient-text"> Discuss More </span>About eBazaar?</h2>
+            <h2 class="heading text-center mb-3">Curious to<span class="gradient-text"> Discuss More </span>About eBazaar?</h2>
             <p class="text-base font-normal text-center mb-6">Need help or customization? Talk to the experts who built it — book your session now.</p>
             <div class="flex flex-wrap items-center max-lg:justify-center gap-4">
                 <NuxtLink to="#" class="primary-button inline-flex items-center gap-3">

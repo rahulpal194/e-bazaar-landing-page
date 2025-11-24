@@ -69,7 +69,7 @@
      <section class="container">
         <div class="mb-20 sm:mb-40">
             <div class="max-w-[934px] w-full mx-auto flex flex-col items-center justify-center mb-8 md:mb-16">
-                <span class="text-base font-medium py-2.5 px-4 border border-[#E0E6F8] rounded-full mb-6 text-primary">Key Features</span>
+                <span class="">Key Features</span>
                 <h1 class="heading mb-6">Powerful & Effective<span class="gradient-text"> Features to Automate & Optimize </span>Your Business Effortlessly</h1>
                 <p class="text-base lg:text-lg font-normal text-center lg:px-24">Packed with essential features to streamline your restaurant operations, boost efficiency, and enhance customer experience.</p>
             </div>
